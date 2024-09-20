@@ -5,12 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b2a60263-1246-4da7-80ce-c6110238255f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/homework/Archer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/homework/Hero.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/homework/Mage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/homework/TrainingGround.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/homework/Warrior.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/homework/Enemy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/homework/Archer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/homework/Archer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/homework/Hero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/homework/Hero.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/homework/Mage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/homework/Mage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/homework/TrainingGround.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/homework/TrainingGround.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/homework/Warrior.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/homework/Warrior.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +41,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master"
+    "git-widget-placeholder": "newBranch"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />

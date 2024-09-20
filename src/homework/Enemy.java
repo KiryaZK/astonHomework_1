@@ -1,6 +1,6 @@
 package homework;
 
-public class Enemy {
+public class Enemy implements Mortal {
     private int health;
 
     public Enemy(int health) {
@@ -22,5 +22,12 @@ public class Enemy {
         }
 
         setHealth(getHealth() - damage);
+    }
+
+    @Override
+    public boolean isAlive() {
+        if (getHealth() > 0) return true;
+
+        return false;
     }
 }

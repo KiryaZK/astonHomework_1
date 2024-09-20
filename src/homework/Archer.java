@@ -7,7 +7,7 @@ public class Archer extends Hero {
 
     @Override
     public void attackEnemy(Enemy enemy) {
-        super.attackEnemy(enemy);
-        System.out.print("выпуская поток стрел!");
+        System.out.print("Лучник " + getName() + " атакует врага, выпуская поток стрел!");
+        System.out.println("Нанесено " + getStartDamage() + " ед. урона!");
     }
 }

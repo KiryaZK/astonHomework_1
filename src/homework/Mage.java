@@ -7,7 +7,7 @@ public class Mage extends Hero {
 
     @Override
     public void attackEnemy(Enemy enemy) {
-        super.attackEnemy(enemy);
-        System.out.print("кастуя сокрушительное заклинание!");
+        System.out.print("Маг " + getName() + " атакует врага, кастуя сокрушительное заклинание!");
+        System.out.println("Нанесено " + getStartDamage() + " ед. урона!");
     }
 }

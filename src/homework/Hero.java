@@ -1,6 +1,6 @@
 package homework;
 
-public class Hero {
+public abstract class Hero {
     private String name;
     private int startDamage;
 
@@ -17,11 +17,6 @@ public class Hero {
         return startDamage;
     }
 
-    public void attackEnemy(Enemy enemy) {
-        int index = getClass().getName().lastIndexOf(".");
-        String className = getClass().getName().substring(index + 1);
-        System.out.print("\n" + className + " " + getName() + " атакует врага ");
-
-    }
+    public abstract void attackEnemy(Enemy enemy);
 
 }

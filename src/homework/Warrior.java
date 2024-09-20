@@ -7,7 +7,7 @@ public class Warrior extends Hero {
 
     @Override
     public void attackEnemy(Enemy enemy) {
-        super.attackEnemy(enemy);
-        System.out.print("занося свой клинок над его головой!");
+        System.out.print("Воин " + getName() + " атакует врага, занося свой клинок над его головой!");
+        System.out.println("Нанесено " + getStartDamage() + " ед. урона!");
     }
 }

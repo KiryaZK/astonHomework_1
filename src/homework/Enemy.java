@@ -1,7 +1,13 @@
 package homework;
 
-public class Enemy implements Mortal {
+public abstract class Enemy implements Mortal {
     private int health;
+
+    private int damage;
+
+    public int getDamage() {
+        return damage;
+    }
 
     public Enemy(int health) {
         this.health = health;
@@ -23,6 +29,9 @@ public class Enemy implements Mortal {
 
         setHealth(getHealth() - damage);
     }
+
+    public abstract void attackHero(Hero hero);
+
 
     @Override
     public boolean isAlive() {

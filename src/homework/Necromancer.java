@@ -17,6 +17,7 @@ public class Necromancer extends Enemy {
     }
 
     public void callUlt(Hero hero) {
+        System.out.println("Некромант ослабил " + hero.getName());
         damageReduction(hero);
     }
 

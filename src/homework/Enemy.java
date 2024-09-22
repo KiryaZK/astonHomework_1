@@ -4,6 +4,15 @@ public abstract class Enemy implements Mortal {
     private int health;
 
     private int damage;
+    private boolean isDead = false;
+
+    public void setDead(boolean dead) {
+        isDead = dead;
+    }
+
+    public boolean isDead() {
+        return isDead;
+    }
 
     public int getDamage() {
         return damage;
@@ -27,7 +36,10 @@ public abstract class Enemy implements Mortal {
             setHealth(0);
             if (this instanceof Zombie) {
                 ((Zombie) this).getRandomReinc();
+
             }
+            setDead(true);
+            if (isDead()) System.out.println("УПАВ((УМЭР");
             return;
         }
 

@@ -7,11 +7,32 @@ public abstract class Hero implements Mortal {
 
     private int damage;
 
+    private int healthStarter;
+
+    private boolean isDead = false;
+
+    public boolean isDead() {
+        return isDead;
+    }
+
+    public int getHealthStarter() {
+        return healthStarter;
+    }
+
+    public void setDead(boolean dead) {
+        isDead = dead;
+    }
+
     public Hero(String name, int health, int startDamage) {
         this.name = name;
         this.startDamage = startDamage;
         this.health = health;
         this.damage = startDamage;
+        this.healthStarter = health;
+    }
+
+    public int getDamage() {
+        return damage;
     }
 
     public String getName() {
@@ -55,6 +76,13 @@ public abstract class Hero implements Mortal {
         if (getHealth() > 0) return true;
 
         return false;
+    }
+
+    public void checkAlive() {
+        if (!isAlive()) {
+            System.out.println(getName() + " YOU DIED!");
+            setDead(true);
+        }
     }
 
 }

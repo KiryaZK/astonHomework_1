@@ -7,6 +7,10 @@ public class Necromancer extends Enemy {
 
     @Override
     public void attackHero(Hero hero) {
+        if (isDead()) {
+            System.out.println("Он умер");
+            return;
+        }
         System.out.println("Некромант атакует героя!");
         hero.takeDamage(getDamage());
         System.out.println("Нанесено " + getDamage() + " урона!");

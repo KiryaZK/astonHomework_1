@@ -8,23 +8,28 @@ public class Zombie extends Enemy {
 
     @Override
     public void attackHero(Hero hero) {
+        if (isDead()) {
+            System.out.println("Он мертв!");
+            return;
+        }
         System.out.println("Зомби подбирается к герою!");
         hero.takeDamage(getDamage());
         System.out.println("Нанесено " + getDamage() + " урона!");
     }
 
     private void reincarnation() {
-        System.out.println("Я снова живу!");
         if (!isAlive())
             setHealth(100);
         System.out.println("*Зомби снова ожил*");
     }
 
-    public void getRandomReinc() {
+    public boolean getRandomReinc() {
         int i = (int) (Math.random() * 2);
-        if (i != 1) return;
+        if (i != 0) return false;
 
         reincarnation();
+        return true;
     }
+
 
 }

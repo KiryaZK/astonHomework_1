@@ -10,5 +10,7 @@ public class Mage extends Hero {
         System.out.print("Маг " + getName() + " атакует врага, кастуя сокрушительное заклинание!");
         enemy.takeDamage(getStartDamage());
         System.out.println("Нанесено " + getStartDamage() + " ед. урона!");
+
+        checkDamage();
     }
 }

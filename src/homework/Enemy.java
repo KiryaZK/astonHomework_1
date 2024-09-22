@@ -9,8 +9,9 @@ public abstract class Enemy implements Mortal {
         return damage;
     }
 
-    public Enemy(int health) {
+    public Enemy(int health, int damage) {
         this.health = health;
+        this.damage = damage;
     }
 
     public int getHealth() {
@@ -24,6 +25,9 @@ public abstract class Enemy implements Mortal {
     public void takeDamage(int damage) {
         if (getHealth() - damage <= 0) {
             setHealth(0);
+            if (this instanceof Zombie) {
+                ((Zombie) this).getRandomReinc();
+            }
             return;
         }
 
